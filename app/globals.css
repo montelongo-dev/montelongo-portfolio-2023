@@ -2,26 +2,192 @@
 @tailwind components;
 @tailwind utilities;
 
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+html,
+body {
+  padding:0;
+  margin:0;
+  font-family:-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif,
+    cursive;
+  @apply scroll-smooth;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+a {
+  /* color:black; */
+  /* text-decoration:none; */
 }
+
+* {
+  box-sizing:border-box;
+}
+
+
+/* NAV */
+.nav_container {
+  @apply flex flex-wrap lg:flex-nowrap items-center justify-between font-semibold bg-neutral-100 lg:bg-white fixed w-full opacity-95 px-4 py-3;
+}
+
+.logo_container {
+  @apply flex flex-shrink-0 text-black lg:mx-6 mx-2 mt-2;
+}
+
+.logo {
+  @apply font-bold text-3xl tracking-tight;
+}
+
+.button_container {
+  @apply block lg:hidden;
+}
+
+.button {
+  @apply flex items-center px-1.5 py-1 border rounded text-black border-black hover:text-gray-600 hover:border-gray-400;
+}
+
+.nav_bar {
+  @apply w-full lg:flex lg:w-auto;
+}
+
+.nav_items {
+  @apply text-base lg:grow justify-between;
+}
+
+.nav_link {
+  @apply block lg:inline-block mt-4 hover:text-gray-600 lg:mx-10 mx-2 text-lg md:text-base text-black
+}
+
+
+/* INDEX PAGE */
+.portfolio_container {
+  @apply md:pt-0.5 md:-mt-0.5 ;
+}
+
+
+/* SECTION SPECIFIC */
+.section_container {
+  @apply m-6 md:mx-20 lg:mx-28 md:min-h-screen min-h-screen;
+}
+
+.section_headline {
+  @apply uppercase pt-2;
+}
+
+.section_hr {
+  @apply border-black;
+}
+
+.icon_style {
+  color:#3e3c3c;
+}
+
+
+/* HOME */
+.home_container {
+  @apply  flex-col justify-center items-center pt-96 lg:my-40 h-screen;
+}
+
+.home_header, .home_subhead {
+  @apply text-neutral-800;
+}
+
+.home_header {
+  @apply items-center text-6xl md:text-6xl lg:text-7xl xl:text-8xl text-center uppercase;
+}
+
+.home_subhead {
+  @apply text-6xl md:text-6xl lg:text-6xl xl:text-8xl text-center pt-2;
+}
+
+.image_container {
+  @apply flex flex-col items-center pt-5 pb-2
+}
+
+.home_image {
+  object-fit:contain;
+  width:50% !important;
+  opacity:0.45;
+}
+
+
+/* ABOUT  */
+.about_h1 {
+  @apply pt-6 lg:pt-14 font-semibold text-xl md:text-2xl lg:text-4xl lg:leading-10 lg:px-16;
+}
+
+.about_h2 {
+  @apply pt-4 lg:pt-6 text-lg md:text-xl lg:text-3xl lg:leading-10 lg:px-16;
+}
+
+
+/* SKILLS */
+.skills_container {
+  @apply flex flex-col xl:flex-row xl:justify-around;
+}
+
+.skill_container {
+  @apply flex flex-col items-center mb-10 shadow-lg rounded-sm basis-1/4 justify-center py-10 md:mx-14 xl:mx-0 bg-slate-50;
+}
+
+.skill_hr {
+  @apply border-black cursor-pointer w-20;
+}
+
+.skill_h4 {
+  @apply text-xl px-1
+}
+
+.skill_download {
+  @apply flex justify-center py-16
+}
+
+.skill_href {
+  @apply flex
+}
+
+.skill_col {
+  @apply flex flex-col items-center py-3;
+}
+
+.skill_col p {
+  @apply text-xl;
+}
+
+.footnote {
+  @apply text-sm pt-2 pb-6 px-14 text-center;
+}
+
+/* CONTACT */
+.input_class {
+  @apply w-full px-3 py-2 border-gray-300 rounded-md focus:outline-none focus:ring-black focus:border-none;
+}
+
+.contact_h2 {
+  @apply pt-8 text-sm md:text-xl lg:text-xl lg:leading-snug lg:px-16;
+}
+
+.contact_form_container {
+  @apply flex flex-col items-center pt-8
+}
+
+.contact_form_div {
+  @apply w-11/12 mb-6;
+}
+
+.contact_button {
+  @apply inline-block px-10 py-2.5 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-gray-900 hover:shadow-lg focus:bg-gray-900 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-900 active:shadow-lg transition duration-150 ease-in-out bg-neutral-500;
+}
+
+.contact__submission {
+  @apply flex flex-col items-center justify-center h-screen px-12 lg:pt-14 text-xl md:text-2xl lg:text-3xl lg:leading-10 lg:px-16;
+}
+
+.link_underline {
+  @apply underline underline-offset-4;
+}
+

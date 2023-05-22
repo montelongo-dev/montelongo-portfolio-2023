@@ -65,7 +65,7 @@ export default function Skills() {
             </div>
 
             <div className="skill_footnote">
-                <Link href="https://github.com/montelongo-dev/" target="_blank" rel="noopener noreferrer" className="skill_link_underline">This site was built using Next.js, Django REST Framework and Tailwind CSS.</Link>
+                <Link href="https://github.com/montelongo-dev/" target="_blank" rel="noopener noreferrer">This site was built using Next.js, Django REST Framework and Tailwind CSS.</Link>
             </div>
 
         </div>

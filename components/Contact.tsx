@@ -10,7 +10,7 @@ export default function Contact() {
                 to connect with me, send me message and I'll get back to you soon.
             </h2>
 
-            <form name="contact" action="/contact" method="POST" className="contact_form_container" data-netlify="true" netlify-honeypot="bot-field">
+            <form name="contact" action="/contact-success" method="POST" className="contact_form_container" data-netlify="true" netlify-honeypot="bot-field">
                 <input type="hidden" name="form-name" value="contact" />
                 <div className="contact_form_div">
                     <label htmlFor="name" className="block mb-2 text-sm">

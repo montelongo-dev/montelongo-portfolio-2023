@@ -11,7 +11,7 @@ export const headerFont = Amatic_SC({
 export const bodyFont = Montserrat({
   subsets: ['latin'],
   variable: '--font-montserrat',
-  weight: ['400'],
+  weight: [],
 });
 
 

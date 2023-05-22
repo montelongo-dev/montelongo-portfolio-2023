@@ -1,5 +1,6 @@
 import './globals.css'
 import { Amatic_SC, Montserrat } from "next/font/google";
+import Nav from '@/components/Nav';
 
 
 export const headerFont = Amatic_SC({
@@ -27,7 +28,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${headerFont.variable} ${bodyFont.variable}`}>
-      <body>{children}</body>
+      <body>
+        <Nav />
+        {children}
+      </body>
     </html>
   )
 }

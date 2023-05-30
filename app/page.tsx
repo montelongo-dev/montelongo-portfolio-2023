@@ -4,13 +4,27 @@ import Skills from "../components/Skills";
 import Contact from "../components/Contact";
 
 
-export default function Portfolio() {
+interface PortfolioProps {
+  home: { name: string; title: string; }[];
+}
+
+const Portfolio = async () => {
+  const portfolioData = await getPortfolio();
+
   return (
     <div className="portfolio_container">
-      <Home />
+      <Home data={portfolioData} />
       <About />
       <Skills />
       <Contact />
     </div>
   );
 }
+
+const getPortfolio = async (): Promise<PortfolioProps> => {
+  const data = await fetch("http://localhost:8000/api/portfolio");
+  const portfolioData = await data.json();
+  return portfolioData;
+};
+
+export default Portfolio;

@@ -23,7 +23,7 @@ export default function NavMenu() {
         document.addEventListener("mousedown", (event) => {
             if (menuRef.current == null || menuRef.current == undefined) {
                 // pass
-            } else if (!menuRef.current.contains(event.target)) {
+            } else if (!menuRef.current.contains(event.target as Node)) {
                 setMenuClosed(true)
             }
         });

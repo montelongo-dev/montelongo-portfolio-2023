@@ -6,6 +6,7 @@ import Contact from "../components/Contact";
 
 interface PortfolioProps {
   home: { name: string; title: string; }[];
+  about: { about_bold_copy: string; about_reg_copy: string }[];
 }
 
 const Portfolio = async () => {
@@ -14,7 +15,7 @@ const Portfolio = async () => {
   return (
     <div className="portfolio_container">
       <Home data={portfolioData} />
-      <About />
+      <About data={portfolioData} />
       <Skills />
       <Contact />
     </div>

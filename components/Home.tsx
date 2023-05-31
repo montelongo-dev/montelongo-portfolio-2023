@@ -4,7 +4,10 @@ import React from "react";
 
 interface HomeProps {
     data: {
-        home: { name: string; title: string; }[];
+        home: {
+            name: string;
+            title: string;
+        }[];
     }
 }
 
@@ -12,7 +15,7 @@ const Home: React.FC<HomeProps> = ({ data }) => {
     return (
         <div id="home" className="home_container font-header">
             <h1 className="home_header">
-                {data.home[0].name}
+                {`<${data.home[0].name}/>`}
             </h1>
             <div className="image_container">
                 <Image
@@ -27,7 +30,7 @@ const Home: React.FC<HomeProps> = ({ data }) => {
                 />
             </div>
             <h2 className="home_subhead">
-                {data.home[0].title}
+                {`<${data.home[0].title}/>`}
             </h2>
         </div>
     )

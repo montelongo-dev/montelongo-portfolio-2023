@@ -114,7 +114,7 @@ a {
 }
 
 .about_h2 {
-  @apply text-base md:text-xl lg:text-2xl pt-4 lg:pt-6 lg:leading-10 lg:px-16;
+  @apply text-base md:text-xl lg:text-2xl pt-2 lg:leading-10 lg:px-16;
 }
 
 .about_p {

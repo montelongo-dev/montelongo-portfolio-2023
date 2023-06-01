@@ -15,7 +15,6 @@ interface SkillCard {
 }
 
 interface SkillsData {
-    id: number;
     skill_card_1: SkillCard;
     skill_card_2: SkillCard;
     skill_card_3: SkillCard;

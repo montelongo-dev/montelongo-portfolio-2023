@@ -1,4 +1,15 @@
-export default function Contact() {
+import React from "react";
+
+interface ContactData {
+    contact_copy: string;
+}
+
+interface ContactProps {
+    contactData: ContactData
+}
+
+const Contact: React.FC<ContactProps> = ({ contactData }) => {
+
     return (
         <div id="contact" className="section_container font-body">
             <h1 className="section_headline">CONTACT</h1>
@@ -6,8 +17,7 @@ export default function Contact() {
             <hr className="section_hr" />
 
             <h2 className="contact_h2">
-                If you are interested in hearing more about my background or would like
-                to connect with me, send me message and I'll get back to you soon.
+                {contactData.contact_copy}
             </h2>
 
             <form name="contact" action="/contact-success" method="POST" className="contact_form_container" data-netlify="true" netlify-honeypot="bot-field">
@@ -52,3 +62,5 @@ export default function Contact() {
         </div>
     );
 }
+
+export default Contact;

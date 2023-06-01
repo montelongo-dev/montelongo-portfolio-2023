@@ -4,25 +4,25 @@ import Skills from "../components/Skills";
 import Contact from "../components/Contact";
 
 
-interface PortfolioProps {
-  home: { name: string; title: string; }[];
-  about: { about_bold_copy: string; about_reg_copy: string }[];
-}
-
 const Portfolio = async () => {
   const portfolioData = await getPortfolio();
+  const homeData = portfolioData.home[0]
+  const aboutData = portfolioData.about[0]
+  const skillsData = portfolioData.skills[0]
+  const contactData = portfolioData.contact[0]
 
   return (
     <div className="portfolio_container">
-      <Home data={portfolioData} />
-      <About data={portfolioData} />
-      <Skills />
-      <Contact />
+      <Home homeData={ homeData } />
+      <About aboutData={ aboutData } />
+      <Skills skillsData={ skillsData } />
+      <Contact contactData={ contactData } />
     </div>
   );
 }
 
-const getPortfolio = async (): Promise<PortfolioProps> => {
+// API fetch
+const getPortfolio = async () => {
   const data = await fetch("http://localhost:8000/api/portfolio");
   const portfolioData = await data.json();
   return portfolioData;

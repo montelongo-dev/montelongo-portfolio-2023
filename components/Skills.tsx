@@ -29,8 +29,6 @@ interface SkillsProps {
 const Skills: React.FC<SkillsProps> = ({ skillsData }) => {
     const { skill_card_1, skill_card_2, skill_card_3, skill_resume_url, skill_github_url } = skillsData;
 
-    // TODO - Update css, uppercase card type, center <ul> skills *************************************
-
     return (
         <div id="skills" className="section_container font-body">
             <h1 className="section_headline">Skills</h1>
@@ -47,43 +45,35 @@ const Skills: React.FC<SkillsProps> = ({ skillsData }) => {
             <div className="skills_container">
                 <div className="skill_container">
                     <FiDatabase size="30" className="text-gray-600" />
-                    <h2 className="font-semibold lg:text-sm pt-3">{skill_card_1.type}</h2>
+                    <h2>{skill_card_1.type}</h2>
                     <hr className="skill_hr" />
-                    <div className="skill_col">
-
-                        <ul>
-                            {skill_card_1.skills.map((skill, index) => (
-                                <li key={index}>{skill.skill}</li>
-                            ))}
-                        </ul>
-
-                    </div>
+                    <ul className="skill_col">
+                        {skill_card_1.skills.map((skill, index) => (
+                            <li key={index}>{skill.skill}</li>
+                        ))}
+                    </ul>
                 </div>
 
                 <div className="skill_container">
                     <HiOutlineCode size={30} className="text-gray-600" />
                     <h2 className="font-semibold lg:text-sm pt-3">{skill_card_2.type}</h2>
                     <hr className="skill_hr" />
-                    <div className="skill_col">
-                        <ul>
-                            {skill_card_2.skills.map((skill, index) => (
-                                <li key={index}>{skill.skill}</li>
-                            ))}
-                        </ul>
-                    </div>
+                    <ul className="skill_col">
+                        {skill_card_2.skills.map((skill, index) => (
+                            <li key={index}>{skill.skill}</li>
+                        ))}
+                    </ul>
                 </div>
 
                 <div className="skill_container">
                     <FaCogs size={30} className="text-gray-600" />
                     <h2 className="font-semibold lg:text-sm pt-3">{skill_card_3.type}</h2>
                     <hr className="skill_hr" />
-                    <div className="skill_col">
-                        <ul>
-                            {skill_card_3.skills.map((skill, index) => (
-                                <li key={index}>{skill.skill}</li>
-                            ))}
-                        </ul>
-                    </div>
+                    <ul className="skill_col">
+                        {skill_card_3.skills.map((skill, index) => (
+                            <li key={index}>{skill.skill}</li>
+                        ))}
+                    </ul>
                 </div>
             </div>
 

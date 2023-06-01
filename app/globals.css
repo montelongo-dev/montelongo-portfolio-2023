@@ -131,6 +131,10 @@ a {
   @apply flex flex-col items-center mb-10 shadow-lg rounded-sm basis-1/4 justify-center py-10 md:mx-14 xl:mx-0 bg-gray-50;
 }
 
+.skill_container > h2 {
+  @apply font-semibold lg:text-sm pt-3 uppercase;
+}
+
 .skill_hr {
   @apply border-black cursor-pointer w-20;
 }
@@ -148,7 +152,7 @@ a {
 }
 
 .skill_col {
-  @apply flex flex-col items-center py-3;
+  @apply flex flex-col items-center py-3 justify-center;
 }
 
 .skill_col p {

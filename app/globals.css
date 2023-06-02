@@ -52,7 +52,7 @@ a {
 }
 
 .nav_link {
-  @apply block lg:inline-block mt-4 hover:text-gray-600 lg:mx-10 mx-2 text-lg md:text-base text-zinc-800 no-underline font-normal;
+  @apply block lg:inline-block mt-4 hover:text-gray-600 lg:mx-10 mx-2 text-lg md:text-base text-black no-underline font-normal;
 }
 
 

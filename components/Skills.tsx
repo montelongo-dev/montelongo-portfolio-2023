@@ -44,7 +44,7 @@ const Skills: React.FC<SkillsProps> = ({ skillsData }) => {
 
             <div className="skills_container">
                 <div className="skill_container">
-                    <FiDatabase size="30" className="text-gray-600" />
+                    <FiDatabase size="30" className="text-gray-800" />
                     <h2>{skill_card_1.type}</h2>
                     <hr className="skill_hr" />
                     <ul className="skill_col">
@@ -55,7 +55,7 @@ const Skills: React.FC<SkillsProps> = ({ skillsData }) => {
                 </div>
 
                 <div className="skill_container">
-                    <HiOutlineCode size={30} className="text-gray-600" />
+                    <HiOutlineCode size={30} className="text-gray-800" />
                     <h2 className="font-semibold lg:text-sm pt-3">{skill_card_2.type}</h2>
                     <hr className="skill_hr" />
                     <ul className="skill_col">
@@ -66,7 +66,7 @@ const Skills: React.FC<SkillsProps> = ({ skillsData }) => {
                 </div>
 
                 <div className="skill_container">
-                    <FaCogs size={30} className="text-gray-600" />
+                    <FaCogs size={30} className="text-gray-800" />
                     <h2 className="font-semibold lg:text-sm pt-3">{skill_card_3.type}</h2>
                     <hr className="skill_hr" />
                     <ul className="skill_col">
@@ -78,7 +78,7 @@ const Skills: React.FC<SkillsProps> = ({ skillsData }) => {
             </div>
 
             <div className="skill_footnote">
-                <Link href={skill_github_url} target="_blank" rel="noopener noreferrer">This site was built using Next.js, Django REST Framework and Tailwind CSS.</Link>
+                <Link href={skill_github_url} target="_blank" rel="noopener noreferrer">This site was built using Next.js, Typescript, Django REST Framework and Tailwind CSS.</Link>
             </div>
 
         </div>

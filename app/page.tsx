@@ -2,6 +2,7 @@ import Home from "../components/Home";
 import About from "../components/About";
 import Skills from "../components/Skills";
 import Contact from "../components/Contact";
+import { getPortfolio } from "../components/utils";
 
 
 const Portfolio = async () => {
@@ -13,19 +14,12 @@ const Portfolio = async () => {
 
   return (
     <div className="portfolio_container">
-      <Home homeData={ homeData } />
-      <About aboutData={ aboutData } />
-      <Skills skillsData={ skillsData } />
-      <Contact contactData={ contactData } />
+      <Home homeData={homeData} />
+      <About aboutData={aboutData} />
+      <Skills skillsData={skillsData} />
+      <Contact contactData={contactData} />
     </div>
   );
 }
-
-// API fetch
-const getPortfolio = async () => {
-  const data = await fetch("http://localhost:8000/api/portfolio");
-  const portfolioData = await data.json();
-  return portfolioData;
-};
 
 export default Portfolio;

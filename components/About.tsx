@@ -22,7 +22,6 @@ const About: React.FC<AboutProps> = ({ aboutData }) => {
                 {about_bold_copy}
             </h1>
             {paragraphs.map((paragraph) => (
-                // TODO - fix spacing between <h2>'s
                 <h2 className="about_h2">{paragraph}</h2>
             ))}
         </div>

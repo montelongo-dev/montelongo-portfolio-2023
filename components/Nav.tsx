@@ -2,12 +2,9 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Link as CustomLink } from "react-scroll";
 
-export default function NavMenu() {
-    const [menuClosed, setMenuClosed] = useState<boolean>(true);
-    const [openClose, setOpenClose] = useState<boolean>(true);
 
-    // useEffect(() => {
-    // }, [menuClosed]);
+const NavMenu = () => {
+    const [menuClosed, setMenuClosed] = useState<boolean>(true);
 
     const menuToggle = () => {
         setMenuClosed(!menuClosed);
@@ -113,3 +110,5 @@ export default function NavMenu() {
         </nav>
     );
 }
+
+export default NavMenu;

@@ -21,8 +21,8 @@ const About: React.FC<AboutProps> = ({ aboutData }) => {
             <h1 className="about_h1">
                 {about_bold_copy}
             </h1>
-            {paragraphs.map((paragraph) => (
-                <h2 className="about_h2">{paragraph}</h2>
+            {paragraphs.map((paragraph, index) => (
+                <h2 className="about_h2" key={index }>{paragraph}</h2>
             ))}
         </div>
     )

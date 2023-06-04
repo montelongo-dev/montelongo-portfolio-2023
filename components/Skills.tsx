@@ -78,7 +78,7 @@ const Skills: React.FC<SkillsProps> = ({ skillsData }) => {
             </div>
 
             <div className="skill_footnote">
-                <Link href={skill_github_url} target="_blank" rel="noopener noreferrer">This site was built using Next.js, Typescript, Django REST Framework and Tailwind CSS.</Link>
+                <Link href={skill_github_url} target="_blank" rel="noopener noreferrer">This site was built using Next.js, Typescript, Django REST Framework.</Link>
             </div>
 
         </div>

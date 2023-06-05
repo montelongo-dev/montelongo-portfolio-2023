@@ -1,15 +1,6 @@
-// import { headers } from 'next/headers';
 import './globals.css'
 import { Amatic_SC, Montserrat } from "next/font/google";
 import Nav from '@/components/Nav';
-
-
-// export const urlPath = (): string => {
-//   const headersList = headers();
-//   const fullUrl = headersList.get('referer') || "";
-//   const urlArray = fullUrl.split('/')
-//   return urlArray[urlArray.length - 1]
-// }
 
 
 export const headerFont = Amatic_SC({
@@ -45,7 +36,6 @@ export default function RootLayout(
         <meta property="og:image" content="https://montelongo.dev/images/montelongo_dev_og.png" />
       </head>
       <body>
-        {/* {urlPath() !== 'contact-success' ? <Nav /> : <></> } */}
         <Nav />
         {children}
       </body>

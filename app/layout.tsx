@@ -45,7 +45,7 @@ export default function RootLayout(
         <meta property="og:image" content="https://montelongo.dev/images/montelongo_dev_og.png" />
       </head>
       <body>
-        {urlPath() === 'contact-success' ? <></> : <Nav />}
+        {urlPath() !== 'contact-success' ? <Nav /> : <></> }
         {children}
       </body>
     </html>

@@ -1,19 +1,20 @@
 "use client"
 import React, { useEffect, useRef, useState } from "react";
+import { usePathname } from 'next/navigation';
 import { Link as CustomLink } from "react-scroll";
 
 
 const NavMenu = () => {
     const [menuClosed, setMenuClosed] = useState<boolean>(true);
-
+    
     const menuToggle = () => {
         setMenuClosed(!menuClosed);
     };
-
+    
     let menuClose = () => {
         setMenuClosed(true);
     };
-
+    
     // Close menu with off click
     let menuRef = useRef<null | HTMLInputElement>(null);
     useEffect(() => {
@@ -25,8 +26,13 @@ const NavMenu = () => {
             }
         });
     });
+    
+    const pathname = usePathname();
 
     return (
+        <>
+        {pathname !== '/contact-success' ? 
+
         <nav className="nav_container">
             <CustomLink
                 to="home"
@@ -108,6 +114,9 @@ const NavMenu = () => {
                 </div>
             </div>
         </nav>
+    : <></>} 
+</>
+
     );
 }
 

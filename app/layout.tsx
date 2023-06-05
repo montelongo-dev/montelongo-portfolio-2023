@@ -9,6 +9,7 @@ export const headerFont = Amatic_SC({
   weight: ['400', '700']
 })
 
+
 export const bodyFont = Montserrat({
   subsets: ['latin'],
   variable: '--font-montserrat',
@@ -21,11 +22,10 @@ export const metadata = {
   description: 'I’m Sam Montelongo, an experienced Web Developer specializing in creating dynamic web applications.',
 }
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+
+export default function RootLayout(
+  { children, }: { children: React.ReactNode }
+) {
   return (
     <html lang="en" className={`${headerFont.variable} ${bodyFont.variable}`}>
       <head>

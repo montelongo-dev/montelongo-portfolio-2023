@@ -36,10 +36,10 @@ const Skills: React.FC<SkillsProps> = ({ skillsData }) => {
             <hr className="section_hr" />
 
             <div className="skill_download" >
-                <Link className="skill_href" href={skill_resume_url} target="_blank" rel="noopener noreferrer">
+                <a href="SMontelongo_Resume_2023.pdf" target="_blank" className="skill_href">
                     <h4 className="skill_h4">Download Resume</h4>
                     <IoDownloadOutline size="25" />
-                </Link>
+                </a>
             </div>
 
             <div className="skills_container">

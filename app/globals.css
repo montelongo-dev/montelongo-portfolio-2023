@@ -110,15 +110,27 @@ a {
 
 /* ABOUT  */
 .about_h1 {
-  @apply font-medium text-lg md:text-xl lg:text-3xl lg:leading-10 lg:px-16 pt-6 lg:pt-14 ;
+  @apply font-medium text-lg md:text-xl lg:text-2xl xl:text-3xl lg:leading-10 lg:pl-4;
 }
 
 .about_h2 {
-  @apply text-base md:text-xl lg:text-2xl pt-2 lg:leading-10 lg:px-16;
+  @apply text-base md:text-xl lg:text-2xl lg:leading-10 lg:px-6 pb-3;
 }
 
 .about_p {
   @apply text-base md:text-xl lg:text-2xl pt-4 lg:pt-6 lg:leading-10 lg:px-16;
+}
+
+.about_image_header_container {
+  @apply flex flex-col lg:flex-row lg:pt-16 lg:px-8 py-10;
+}
+
+.about_header_copy {
+  @apply flex flex-col about_h1 w-full lg:order-2 lg:justify-center lg:content-center pb-4 lg:pb-0;
+}
+
+.about_image {
+  @apply flex justify-center h-fit w-full lg:order-1 lg:w-1/2 pt-4 lg:pt-0;
 }
 
 

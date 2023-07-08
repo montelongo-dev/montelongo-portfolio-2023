@@ -102,9 +102,7 @@ a {
 }
 
 .home_image {
-  object-fit:contain;
-  width:50% !important;
-  opacity:0.45;
+  @apply object-contain w-11/12 md:w-7/12 lg:w-1/2 max-w-3xl opacity-75;
 }
 
 
@@ -194,7 +192,7 @@ a {
 }
 
 .contact_button {
-  @apply inline-block px-10 py-2.5 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-gray-900 hover:shadow-lg focus:bg-gray-900 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-900 active:shadow-lg transition duration-150 ease-in-out bg-neutral-500;
+  @apply inline-block px-10 py-2.5 font-medium text-xs leading-tight text-white uppercase rounded bg-gradient-to-r from-zinc-400 to-zinc-800 hover:from-zinc-800 hover:to-zinc-400 shadow-lg;
 }
 
 

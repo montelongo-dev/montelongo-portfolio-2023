@@ -19,7 +19,7 @@ export default function ContactSuccess() {
         />
       </div>
       <h2 className="contact_success_subhead font-header">
-        {`<Web-Developer/>`}
+        {`<Full-Stack-Developer/>`}
       </h2>
 
       <div className="contact_submission_copy">

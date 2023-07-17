@@ -36,7 +36,7 @@ const Skills: React.FC<SkillsProps> = ({ skillsData }) => {
             <hr className="section_hr" />
 
             <div className="skill_download" >
-                <a href="SMontelongo_Resume_2023.pdf" target="_blank" className="skill_href">
+                <a href="SMontelongo_Resume_0723.pdf" target="_blank" className="skill_href">
                     <h4 className="skill_h4">Download Resume</h4>
                     <IoDownloadOutline size="25" />
                 </a>

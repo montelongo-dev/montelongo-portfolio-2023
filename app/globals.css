@@ -82,7 +82,7 @@ a {
 
 /* HOME */
 .home_container {
-  @apply  flex-col justify-center items-center pt-96 lg:my-40 h-screen;
+  @apply  flex flex-col items-center justify-center lg:my-40 h-screen;
 }
 
 .home_header, .home_subhead {
@@ -153,8 +153,12 @@ a {
   @apply text-xl px-1
 }
 
+.linkedin {
+  @apply flex justify-center pt-16 pb-2
+}
+
 .skill_download {
-  @apply flex justify-center py-16
+  @apply flex justify-center pb-16
 }
 
 .skill_href {

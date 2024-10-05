@@ -2,7 +2,8 @@ import Link from "next/link";
 import { FaCogs } from "react-icons/fa";
 import { FiDatabase } from "react-icons/fi";
 import { HiOutlineCode } from "react-icons/hi";
-import { IoDownloadOutline } from "react-icons/io5";
+import { IoDownloadOutline, IoLogoLinkedin } from "react-icons/io5";
+import { CiLinkedin } from "react-icons/ci";
 
 
 interface Skill {
@@ -34,6 +35,13 @@ const Skills: React.FC<SkillsProps> = ({ skillsData }) => {
             <h1 className="section_headline">Skills</h1>
 
             <hr className="section_hr" />
+
+            <div className="linkedin" >
+                <a href="https://www.linkedin.com/in/sam-montelongo" target="_blank" className="skill_href">
+                    <h4 className="skill_h4">LinkedIn</h4>
+                    <IoLogoLinkedin size="27" />
+                </a>
+            </div>
 
             <div className="skill_download" >
                 <a href="SMontelongo_Resume_Oct2024.pdf" target="_blank" className="skill_href">
